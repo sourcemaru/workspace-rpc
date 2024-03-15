@@ -1,0 +1,362 @@
+	--- egmGsfElectronIDs:heepElectronID-HEEPV70 added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-Summer16UL-ID-ISO-HZZ added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-Summer17UL-ID-ISO-HZZ added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-Summer18UL-ID-ISO-HZZ added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-Winter22-HZZ-V1 added to patElectrons
+	--- egmGsfElectronIDs:cutBasedElectronID-Fall17-94X-V2-loose added to patElectrons
+	--- egmGsfElectronIDs:cutBasedElectronID-Fall17-94X-V2-medium added to patElectrons
+	--- egmGsfElectronIDs:cutBasedElectronID-Fall17-94X-V2-tight added to patElectrons
+	--- egmGsfElectronIDs:cutBasedElectronID-Fall17-94X-V2-veto added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-Fall17-iso-V2-wp80 added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-Fall17-iso-V2-wp90 added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-Fall17-iso-V2-wpHZZ added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-Fall17-iso-V2-wpLoose added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-Fall17-noIso-V2-wp80 added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-Fall17-noIso-V2-wp90 added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-Fall17-noIso-V2-wpLoose added to patElectrons
+	--- egmGsfElectronIDs:cutBasedElectronID-RunIIIWinter22-V1-loose added to patElectrons
+	--- egmGsfElectronIDs:cutBasedElectronID-RunIIIWinter22-V1-medium added to patElectrons
+	--- egmGsfElectronIDs:cutBasedElectronID-RunIIIWinter22-V1-tight added to patElectrons
+	--- egmGsfElectronIDs:cutBasedElectronID-RunIIIWinter22-V1-veto added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-RunIIIWinter22-iso-V1-wp80 added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-RunIIIWinter22-iso-V1-wp90 added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-RunIIIWinter22-noIso-V1-wp80 added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-RunIIIWinter22-noIso-V1-wp90 added to patElectrons
+	--- egmPhotonIDs:cutBasedPhotonID-RunIIIWinter22-122X-V1-loose added to patPhotons
+	--- egmPhotonIDs:cutBasedPhotonID-RunIIIWinter22-122X-V1-medium added to patPhotons
+	--- egmPhotonIDs:cutBasedPhotonID-RunIIIWinter22-122X-V1-tight added to patPhotons
+	--- egmPhotonIDs:mvaPhoID-RunIIIWinter22-v1-wp80 added to patPhotons
+	--- egmPhotonIDs:mvaPhoID-RunIIIWinter22-v1-wp90 added to patPhotons
+	--- egmPhotonIDs:cutBasedPhotonID-Fall17-94X-V2-loose added to patPhotons
+	--- egmPhotonIDs:cutBasedPhotonID-Fall17-94X-V2-medium added to patPhotons
+	--- egmPhotonIDs:cutBasedPhotonID-Fall17-94X-V2-tight added to patPhotons
+	--- egmPhotonIDs:mvaPhoID-RunIIFall17-v2-wp80 added to patPhotons
+	--- egmPhotonIDs:mvaPhoID-RunIIFall17-v2-wp90 added to patPhotons
+RAW2DIGI,L1Reco,RECO,PAT,NANO,DQM:@standardDQM+@miniAODDQM+@nanoAODDQM
+entry file:step2.root
+Step: RAW2DIGI Spec: 
+Step: L1Reco Spec: 
+Step: RECO Spec: 
+Step: PAT Spec: 
+Step: NANO Spec: 
+in prepare_nano nanoSequence
+Step: DQM Spec: ['@standardDQM', '@miniAODDQM', '@nanoAODDQM']
+replacing HLT process name - sequence DQMOffline will use 'reHLT'
+replacing HLT process name - sequence DQMOfflineMiniAOD will use 'reHLT'
+replacing HLT process name - sequence DQMOfflineNanoAOD will use 'reHLT'
+customising the process with customisePostEra_Run3 from Configuration/DataProcessing/RecoTLR
+customising the process with nanoAOD_customizeCommon from PhysicsTools/NanoAOD/nano_cff
+customising the process with miniAOD_customizeAllData from PhysicsTools/PatAlgos/slimming/miniAOD_tools
+******************* RunOnData *******************
+************** MC dependence removal ************
+removing MC dependencies for photons
+removing MC dependencies for out of time photons
+removing MC dependencies for electrons
+removing MC dependencies for LowPtElectrons
+removing MC dependencies for muons
+removing MC dependencies for taus
+removing MC dependencies for taus boosted 
+removing MC dependencies for jets
+removing MC dependencies for AK8 jets
+adding L2L3Residual JEC for: patJetCorrFactors
+adding L2L3Residual JEC for: patJetCorrFactorsAK8PFPuppiSoftDrop
+adding L2L3Residual JEC for: patJetCorrFactorsAK8PFPuppiSoftDropSubjets
+adding L2L3Residual JEC for: patJetCorrFactorsAK8Puppi
+adding L2L3Residual JEC for: patJetCorrFactorsNoHF
+adding L2L3Residual JEC for: patJetCorrFactorsPuppi
+adding L2L3Residual JEC for: patJetCorrFactorsTransientCorrectedSlimmedDeepFlavour
+adding L2L3Residual JEC for: patJetCorrFactorsTransientCorrectedSlimmedPuppiWithDeepTags
+adding L2L3Residual JEC for: patJetCorrFactorsTransientCorrectedSlimmedAK8DeepTags
+Starting  cmsRun  step3_RAW2DIGI_L1Reco_RECO_PAT_NANO_DQM.py
+	--- egmGsfElectronIDs:heepElectronID-HEEPV70 added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-Summer16UL-ID-ISO-HZZ added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-Summer17UL-ID-ISO-HZZ added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-Summer18UL-ID-ISO-HZZ added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-Winter22-HZZ-V1 added to patElectrons
+	--- egmGsfElectronIDs:cutBasedElectronID-Fall17-94X-V2-loose added to patElectrons
+	--- egmGsfElectronIDs:cutBasedElectronID-Fall17-94X-V2-medium added to patElectrons
+	--- egmGsfElectronIDs:cutBasedElectronID-Fall17-94X-V2-tight added to patElectrons
+	--- egmGsfElectronIDs:cutBasedElectronID-Fall17-94X-V2-veto added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-Fall17-iso-V2-wp80 added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-Fall17-iso-V2-wp90 added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-Fall17-iso-V2-wpHZZ added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-Fall17-iso-V2-wpLoose added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-Fall17-noIso-V2-wp80 added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-Fall17-noIso-V2-wp90 added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-Fall17-noIso-V2-wpLoose added to patElectrons
+	--- egmGsfElectronIDs:cutBasedElectronID-RunIIIWinter22-V1-loose added to patElectrons
+	--- egmGsfElectronIDs:cutBasedElectronID-RunIIIWinter22-V1-medium added to patElectrons
+	--- egmGsfElectronIDs:cutBasedElectronID-RunIIIWinter22-V1-tight added to patElectrons
+	--- egmGsfElectronIDs:cutBasedElectronID-RunIIIWinter22-V1-veto added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-RunIIIWinter22-iso-V1-wp80 added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-RunIIIWinter22-iso-V1-wp90 added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-RunIIIWinter22-noIso-V1-wp80 added to patElectrons
+	--- egmGsfElectronIDs:mvaEleID-RunIIIWinter22-noIso-V1-wp90 added to patElectrons
+	--- egmPhotonIDs:cutBasedPhotonID-RunIIIWinter22-122X-V1-loose added to patPhotons
+	--- egmPhotonIDs:cutBasedPhotonID-RunIIIWinter22-122X-V1-medium added to patPhotons
+	--- egmPhotonIDs:cutBasedPhotonID-RunIIIWinter22-122X-V1-tight added to patPhotons
+	--- egmPhotonIDs:mvaPhoID-RunIIIWinter22-v1-wp80 added to patPhotons
+	--- egmPhotonIDs:mvaPhoID-RunIIIWinter22-v1-wp90 added to patPhotons
+	--- egmPhotonIDs:cutBasedPhotonID-Fall17-94X-V2-loose added to patPhotons
+	--- egmPhotonIDs:cutBasedPhotonID-Fall17-94X-V2-medium added to patPhotons
+	--- egmPhotonIDs:cutBasedPhotonID-Fall17-94X-V2-tight added to patPhotons
+	--- egmPhotonIDs:mvaPhoID-RunIIFall17-v2-wp80 added to patPhotons
+	--- egmPhotonIDs:mvaPhoID-RunIIFall17-v2-wp90 added to patPhotons
+Failed to parse CPUID
+******************* RunOnData *******************
+************** MC dependence removal ************
+removing MC dependencies for photons
+removing MC dependencies for out of time photons
+removing MC dependencies for electrons
+removing MC dependencies for LowPtElectrons
+removing MC dependencies for muons
+removing MC dependencies for taus
+removing MC dependencies for taus boosted 
+removing MC dependencies for jets
+removing MC dependencies for AK8 jets
+adding L2L3Residual JEC for: patJetCorrFactors
+adding L2L3Residual JEC for: patJetCorrFactorsAK8PFPuppiSoftDrop
+adding L2L3Residual JEC for: patJetCorrFactorsAK8PFPuppiSoftDropSubjets
+adding L2L3Residual JEC for: patJetCorrFactorsAK8Puppi
+adding L2L3Residual JEC for: patJetCorrFactorsNoHF
+adding L2L3Residual JEC for: patJetCorrFactorsPuppi
+adding L2L3Residual JEC for: patJetCorrFactorsTransientCorrectedSlimmedDeepFlavour
+adding L2L3Residual JEC for: patJetCorrFactorsTransientCorrectedSlimmedPuppiWithDeepTags
+adding L2L3Residual JEC for: patJetCorrFactorsTransientCorrectedSlimmedAK8DeepTags
+%MSG-i AlpakaService:  (NoModuleName) 15-Mar-2024 07:38:08 CET pre-events
+AlpakaServiceSerialSync succesfully initialised.
+Found 1 device:
+  - Intel Xeon Processor (Icelake)
+%MSG
+2024-03-15 07:38:10.712140: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+15-Mar-2024 07:38:12 CET  Initiating request to open file file:step2.root
+15-Mar-2024 07:38:15 CET  Successfully opened file file:step2.root
+2024-03-15 07:38:28.101985: I tensorflow/core/platform/cpu_feature_guard.cc:182] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: SSE4.1 SSE4.2 AVX AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+2024-03-15 07:38:28.112782: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:353] MLIR V1 optimization pass is not enabled
+%MSG-w NonConsumedConditionalModules:  AfterModConstruction  15-Mar-2024 07:38:37 CET pre-events
+The following modules were part of some ConditionalTask, but were not
+consumed by any other module in any of the Paths to which the ConditionalTask
+was associated. Perhaps they should be either removed from the
+job, or moved to a Task to make it explicit they are unscheduled.
+
+ ecalRecHit@cpu
+ hbhereco@cpu
+ siPixelClustersPreSplitting@cpu
+ siPixelDigis@cpu
+ siPixelRecHitsPreSplitting@cpu
+%MSG
+%MSG-e HLTConfigProvider:   DQMPFCandidateAnalyzer:packedCandidateDQMAnalyzerMiniAOD@beginRun  15-Mar-2024 07:38:49 CET Run: 369978
+Falling back to ProcessName-only init using ProcessName 'RECO' !
+%MSG
+%MSG-e HLTConfigProvider:   DQMPFCandidateAnalyzer:packedCandidateDQMAnalyzerMiniAOD@beginRun  15-Mar-2024 07:38:49 CET Run: 369978
+ Process name 'RECO' not found in registry!
+%MSG
+Begin processing the 1st record. Run 369978, Event 570065007, LumiSection 515 on stream 0 at 15-Mar-2024 07:38:52.936 CET
+%MSG-w HLTObjectsMonitor:  HLTObjectsMonitor:hltObjectsMonitor4all  15-Mar-2024 07:38:54 CET Run: 369978 Event: 570065007
+trigger object does not match ( dR > 0.1) to any of the candidates in either InputTag:  label = hltL3NoFiltersNoVtxMuonCandidates, instance =  or InputTag:  label = hltEgammaCandidates, instance = 
+%MSG
+%MSG-w HLTObjectsMonitor:  HLTObjectsMonitor:hltObjectsMonitor4all  15-Mar-2024 07:38:54 CET Run: 369978 Event: 570065007
+trigger object does not match ( dR > 0.1) to any of the candidates in either InputTag:  label = hltL3NoFiltersNoVtxMuonCandidates, instance =  or InputTag:  label = hltEgammaCandidates, instance = 
+%MSG
+%MSG-w SiStripRawToDigi:  SiStripRawToDigiModule:siStripDigis  15-Mar-2024 07:38:55 CET Run: 369978 Event: 570065007
+NULL pointer to FEDRawData for FED: id 251
+Note: further warnings of this type will be suppressed (this can be changed by enabling debugging printout)
+%MSG
+%MSG-e hltPrescaleTable:  PATTriggerProducer:patTrigger  15-Mar-2024 07:38:55 CET Run: 369978 Event: 570065007
+No HLT prescale table found
+Using default empty table with all prescales 1
+%MSG
+%MSG-e TotemVFATRawToDigi:  TotemVFATRawToDigi:ctppsDiamondRawToDigi  15-Mar-2024 07:39:02 CET Run: 369978 Event: 570065007
+No AnalysisMask found for TimingDiamond: 
+Note: further warnings of this type will be suppressed (this can be changed by enabling debugging printout)
+%MSG
+#--------------------------------------------------------------------------
+#                         FastJet release 3.4.1
+#                 M. Cacciari, G.P. Salam and G. Soyez                  
+#     A software package for jet finding and analysis at colliders      
+#                           http://fastjet.fr                           
+#	                                                                      
+# Please cite EPJC72(2012)1896 [arXiv:1111.6097] if you use this package
+# for scientific work and optionally PLB641(2006)57 [hep-ph/0512210].   
+#                                                                       
+# FastJet is provided without warranty under the GNU GPL v2 or higher.  
+# It uses T. Chan's closest pair algorithm, S. Fortune's Voronoi code
+# and 3rd party plugin jet algorithms. See COPYING file for details.
+#--------------------------------------------------------------------------
+Begin processing the 2nd record. Run 369978, Event 570173543, LumiSection 515 on stream 0 at 15-Mar-2024 07:39:16.491 CET
+Begin processing the 3rd record. Run 369978, Event 569814506, LumiSection 515 on stream 0 at 15-Mar-2024 07:39:24.073 CET
+Begin processing the 4th record. Run 369978, Event 569829083, LumiSection 515 on stream 0 at 15-Mar-2024 07:39:35.511 CET
+%MSG-w HLTObjectsMonitor:  HLTObjectsMonitor:hltObjectsMonitor4all  15-Mar-2024 07:39:35 CET Run: 369978 Event: 569829083
+trigger object does not match ( dR > 0.1) to any of the candidates in either InputTag:  label = hltL3NoFiltersNoVtxMuonCandidates, instance =  or InputTag:  label = hltEgammaCandidates, instance = 
+%MSG
+%MSG-w HLTObjectsMonitor:  HLTObjectsMonitor:hltObjectsMonitor4all  15-Mar-2024 07:39:35 CET Run: 369978 Event: 569829083
+trigger object does not match ( dR > 0.1) to any of the candidates in either InputTag:  label = hltL3NoFiltersNoVtxMuonCandidates, instance =  or InputTag:  label = hltEgammaCandidates, instance = 
+%MSG
+%MSG-w HLTObjectsMonitor:  HLTObjectsMonitor:hltObjectsMonitor4all  15-Mar-2024 07:39:35 CET Run: 369978 Event: 569829083
+trigger object does not match ( dR > 0.1) to any of the candidates in either InputTag:  label = hltL3NoFiltersNoVtxMuonCandidates, instance =  or InputTag:  label = hltEgammaCandidates, instance = 
+%MSG
+%MSG-e TrajectoryNotPosDef:  TrackProducer:pixelPairStepTracks  15-Mar-2024 07:39:40 CET Run: 369978 Event: 569829083
+Trajectory covariance is not positive-definite
+%MSG
+Begin processing the 5th record. Run 369978, Event 570030552, LumiSection 515 on stream 0 at 15-Mar-2024 07:39:50.587 CET
+Begin processing the 6th record. Run 369978, Event 569740358, LumiSection 515 on stream 0 at 15-Mar-2024 07:39:59.287 CET
+Begin processing the 7th record. Run 369978, Event 569740366, LumiSection 515 on stream 0 at 15-Mar-2024 07:40:09.130 CET
+%MSG-w BasicTrajectoryState:  TrackProducer:detachedTripletStepTracks  15-Mar-2024 07:40:12 CET Run: 369978 Event: 569740366
+curv error not pos-def
+[     0.023294-5.23911e-08 4.27999e-09 -9.0814e-10-1.48611e-06
+  -5.23911e-08-0.000411347    -0.01142-1.07691e-12-1.80847e-09
+   4.27999e-09    -0.01142    0.139376 3.06094e-13 7.96105e-10
+   -9.0814e-10-1.07691e-12 3.06094e-13 1.71102e-12 2.76347e-09
+  -1.48611e-06-1.80847e-09 7.96105e-10 2.76347e-09 4.52492e-06 ]
+pos/mom/mf  (-5.61405,-4.19926,22.2184)   (7.70026,-11.745,-13.7838)   (-0.000251931,-0.000188443,3.81039) 
+%MSG
+%MSG-w BasicTrajectoryState:  TrackProducer:detachedTripletStepTracks  15-Mar-2024 07:40:12 CET Run: 369978 Event: 569740366
+curv error not pos-def
+[     0.023294 5.07616e-07  0.00680254  -0.0620573 0.000207462
+   5.07616e-07-0.000411412  -0.0114189    0.208401  0.00943454
+    0.00680254  -0.0114189    0.141348    -2.55934    0.305196
+    -0.0620573    0.208401    -2.55934     46.5037     -5.5692
+   0.000207462  0.00943454    0.305196     -5.5692   -0.212244 ]
+pos/mom/mf  (-15.5042,11.1327,40.1255)   (7.52517,-11.8579,-13.7839)   (-0.00127763,0.000917399,3.80849) 
+%MSG
+Begin processing the 8th record. Run 369978, Event 569751185, LumiSection 515 on stream 0 at 15-Mar-2024 07:40:20.180 CET
+Begin processing the 9th record. Run 369978, Event 569760269, LumiSection 515 on stream 0 at 15-Mar-2024 07:40:25.937 CET
+Begin processing the 10th record. Run 369978, Event 570197098, LumiSection 515 on stream 0 at 15-Mar-2024 07:40:45.021 CET
+Begin processing the 11th record. Run 369978, Event 570654033, LumiSection 515 on stream 0 at 15-Mar-2024 07:40:54.844 CET
+%MSG-w HLTObjectsMonitor:  HLTObjectsMonitor:hltObjectsMonitor4all  15-Mar-2024 07:40:54 CET Run: 369978 Event: 570654033
+trigger object does not match ( dR > 0.1) to any of the candidates in either InputTag:  label = hltL3NoFiltersNoVtxMuonCandidates, instance =  or InputTag:  label = hltEgammaCandidates, instance = 
+%MSG
+%MSG-w HLTObjectsMonitor:  HLTObjectsMonitor:hltObjectsMonitor4all  15-Mar-2024 07:40:54 CET Run: 369978 Event: 570654033
+trigger object does not match ( dR > 0.1) to any of the candidates in either InputTag:  label = hltL3NoFiltersNoVtxMuonCandidates, instance =  or InputTag:  label = hltEgammaCandidates, instance = 
+%MSG
+%MSG-w HLTObjectsMonitor:  HLTObjectsMonitor:hltObjectsMonitor4all  15-Mar-2024 07:40:54 CET Run: 369978 Event: 570654033
+trigger object does not match ( dR > 0.1) to any of the candidates in either InputTag:  label = hltL3NoFiltersNoVtxMuonCandidates, instance =  or InputTag:  label = hltEgammaCandidates, instance = 
+%MSG
+Begin processing the 12th record. Run 369978, Event 570758873, LumiSection 515 on stream 0 at 15-Mar-2024 07:41:03.608 CET
+Begin processing the 13th record. Run 369978, Event 571136099, LumiSection 515 on stream 0 at 15-Mar-2024 07:41:12.435 CET
+Begin processing the 14th record. Run 369978, Event 571355555, LumiSection 515 on stream 0 at 15-Mar-2024 07:41:18.159 CET
+Begin processing the 15th record. Run 369978, Event 571032643, LumiSection 515 on stream 0 at 15-Mar-2024 07:41:28.219 CET
+Begin processing the 16th record. Run 369978, Event 571117870, LumiSection 515 on stream 0 at 15-Mar-2024 07:41:44.251 CET
+Begin processing the 17th record. Run 369978, Event 571348317, LumiSection 515 on stream 0 at 15-Mar-2024 07:41:53.958 CET
+Begin processing the 18th record. Run 369978, Event 570305738, LumiSection 515 on stream 0 at 15-Mar-2024 07:42:03.380 CET
+Begin processing the 19th record. Run 369978, Event 570391086, LumiSection 515 on stream 0 at 15-Mar-2024 07:42:22.827 CET
+Begin processing the 20th record. Run 369978, Event 570960133, LumiSection 515 on stream 0 at 15-Mar-2024 07:42:39.799 CET
+Begin processing the 21st record. Run 369978, Event 570045141, LumiSection 515 on stream 0 at 15-Mar-2024 07:42:46.874 CET
+Begin processing the 22nd record. Run 369978, Event 570139216, LumiSection 515 on stream 0 at 15-Mar-2024 07:43:01.225 CET
+Begin processing the 23rd record. Run 369978, Event 570309304, LumiSection 515 on stream 0 at 15-Mar-2024 07:43:26.879 CET
+Begin processing the 24th record. Run 369978, Event 570312894, LumiSection 515 on stream 0 at 15-Mar-2024 07:43:44.325 CET
+Begin processing the 25th record. Run 369978, Event 570663028, LumiSection 515 on stream 0 at 15-Mar-2024 07:43:57.016 CET
+Begin processing the 26th record. Run 369978, Event 570539857, LumiSection 515 on stream 0 at 15-Mar-2024 07:44:05.313 CET
+Begin processing the 27th record. Run 369978, Event 570184358, LumiSection 515 on stream 0 at 15-Mar-2024 07:44:13.220 CET
+Begin processing the 28th record. Run 369978, Event 570296708, LumiSection 515 on stream 0 at 15-Mar-2024 07:44:24.071 CET
+%MSG-w HLTObjectsMonitor:  HLTObjectsMonitor:hltObjectsMonitor4all  15-Mar-2024 07:44:24 CET Run: 369978 Event: 570296708
+trigger object does not match ( dR > 0.1) to any of the candidates in either InputTag:  label = hltL3NoFiltersNoVtxMuonCandidates, instance =  or InputTag:  label = hltEgammaCandidates, instance = 
+%MSG
+%MSG-w HLTObjectsMonitor:  HLTObjectsMonitor:hltObjectsMonitor4all  15-Mar-2024 07:44:24 CET Run: 369978 Event: 570296708
+trigger object does not match ( dR > 0.1) to any of the candidates in either InputTag:  label = hltL3NoFiltersNoVtxMuonCandidates, instance =  or InputTag:  label = hltEgammaCandidates, instance = 
+%MSG
+Begin processing the 29th record. Run 369978, Event 570300332, LumiSection 515 on stream 0 at 15-Mar-2024 07:44:35.246 CET
+Begin processing the 30th record. Run 369978, Event 570427566, LumiSection 515 on stream 0 at 15-Mar-2024 07:44:41.460 CET
+Begin processing the 31st record. Run 369978, Event 571393667, LumiSection 515 on stream 0 at 15-Mar-2024 07:45:00.170 CET
+Begin processing the 32nd record. Run 369978, Event 569977902, LumiSection 515 on stream 0 at 15-Mar-2024 07:45:13.882 CET
+Begin processing the 33rd record. Run 369978, Event 571440725, LumiSection 515 on stream 0 at 15-Mar-2024 07:45:21.101 CET
+Begin processing the 34th record. Run 369978, Event 570155490, LumiSection 515 on stream 0 at 15-Mar-2024 07:45:30.411 CET
+Begin processing the 35th record. Run 369978, Event 570341994, LumiSection 515 on stream 0 at 15-Mar-2024 07:45:44.900 CET
+Begin processing the 36th record. Run 369978, Event 570343775, LumiSection 515 on stream 0 at 15-Mar-2024 07:45:54.039 CET
+Begin processing the 37th record. Run 369978, Event 570738879, LumiSection 515 on stream 0 at 15-Mar-2024 07:46:16.737 CET
+Begin processing the 38th record. Run 369978, Event 571009105, LumiSection 515 on stream 0 at 15-Mar-2024 07:46:22.063 CET
+Begin processing the 39th record. Run 369978, Event 570274860, LumiSection 515 on stream 0 at 15-Mar-2024 07:46:28.056 CET
+Begin processing the 40th record. Run 369978, Event 570711779, LumiSection 515 on stream 0 at 15-Mar-2024 07:46:42.058 CET
+Begin processing the 41st record. Run 369978, Event 569776496, LumiSection 515 on stream 0 at 15-Mar-2024 07:46:57.448 CET
+Begin processing the 42nd record. Run 369978, Event 569885407, LumiSection 515 on stream 0 at 15-Mar-2024 07:47:06.646 CET
+Begin processing the 43rd record. Run 369978, Event 569883602, LumiSection 515 on stream 0 at 15-Mar-2024 07:47:14.699 CET
+Begin processing the 44th record. Run 369978, Event 569947065, LumiSection 515 on stream 0 at 15-Mar-2024 07:47:26.990 CET
+Begin processing the 45th record. Run 369978, Event 569948888, LumiSection 515 on stream 0 at 15-Mar-2024 07:47:41.248 CET
+Begin processing the 46th record. Run 369978, Event 570084948, LumiSection 515 on stream 0 at 15-Mar-2024 07:47:57.934 CET
+Begin processing the 47th record. Run 369978, Event 570253089, LumiSection 515 on stream 0 at 15-Mar-2024 07:48:09.965 CET
+Begin processing the 48th record. Run 369978, Event 570256726, LumiSection 515 on stream 0 at 15-Mar-2024 07:48:19.510 CET
+Begin processing the 49th record. Run 369978, Event 570643075, LumiSection 515 on stream 0 at 15-Mar-2024 07:48:28.373 CET
+Begin processing the 50th record. Run 369978, Event 570644908, LumiSection 515 on stream 0 at 15-Mar-2024 07:48:36.579 CET
+Begin processing the 51st record. Run 369978, Event 570646713, LumiSection 515 on stream 0 at 15-Mar-2024 07:48:44.271 CET
+Begin processing the 52nd record. Run 369978, Event 570811381, LumiSection 515 on stream 0 at 15-Mar-2024 07:48:56.365 CET
+Begin processing the 53rd record. Run 369978, Event 570856944, LumiSection 515 on stream 0 at 15-Mar-2024 07:49:06.504 CET
+Begin processing the 54th record. Run 369978, Event 570922150, LumiSection 515 on stream 0 at 15-Mar-2024 07:49:14.866 CET
+Begin processing the 55th record. Run 369978, Event 570063198, LumiSection 515 on stream 0 at 15-Mar-2024 07:49:24.900 CET
+Begin processing the 56th record. Run 369978, Event 570079548, LumiSection 515 on stream 0 at 15-Mar-2024 07:49:36.192 CET
+%MSG-w HLTObjectsMonitor:  HLTObjectsMonitor:hltObjectsMonitor4all  15-Mar-2024 07:49:36 CET Run: 369978 Event: 570079548
+trigger object does not match ( dR > 0.1) to any of the candidates in either InputTag:  label = hltL3NoFiltersNoVtxMuonCandidates, instance =  or InputTag:  label = hltEgammaCandidates, instance = 
+%MSG
+Begin processing the 57th record. Run 369978, Event 570231447, LumiSection 515 on stream 0 at 15-Mar-2024 07:49:48.474 CET
+Begin processing the 58th record. Run 369978, Event 570418444, LumiSection 515 on stream 0 at 15-Mar-2024 07:49:55.105 CET
+Begin processing the 59th record. Run 369978, Event 570498224, LumiSection 515 on stream 0 at 15-Mar-2024 07:50:07.143 CET
+Begin processing the 60th record. Run 369978, Event 570796982, LumiSection 515 on stream 0 at 15-Mar-2024 07:50:16.998 CET
+Begin processing the 61st record. Run 369978, Event 571179875, LumiSection 515 on stream 0 at 15-Mar-2024 07:50:27.489 CET
+Begin processing the 62nd record. Run 369978, Event 570385606, LumiSection 515 on stream 0 at 15-Mar-2024 07:50:39.700 CET
+Begin processing the 63rd record. Run 369978, Event 571134270, LumiSection 515 on stream 0 at 15-Mar-2024 07:50:59.426 CET
+Begin processing the 64th record. Run 369978, Event 571332105, LumiSection 515 on stream 0 at 15-Mar-2024 07:51:08.571 CET
+Begin processing the 65th record. Run 369978, Event 570356420, LumiSection 515 on stream 0 at 15-Mar-2024 07:51:15.903 CET
+Begin processing the 66th record. Run 369978, Event 571018075, LumiSection 515 on stream 0 at 15-Mar-2024 07:51:22.470 CET
+Begin processing the 67th record. Run 369978, Event 571368243, LumiSection 515 on stream 0 at 15-Mar-2024 07:51:35.696 CET
+Begin processing the 68th record. Run 369978, Event 569793020, LumiSection 515 on stream 0 at 15-Mar-2024 07:51:49.810 CET
+Begin processing the 69th record. Run 369978, Event 570514889, LumiSection 515 on stream 0 at 15-Mar-2024 07:51:59.465 CET
+Begin processing the 70th record. Run 369978, Event 570684936, LumiSection 515 on stream 0 at 15-Mar-2024 07:52:05.395 CET
+Begin processing the 71st record. Run 369978, Event 571297700, LumiSection 515 on stream 0 at 15-Mar-2024 07:52:19.041 CET
+Begin processing the 72nd record. Run 369978, Event 570137632, LumiSection 515 on stream 0 at 15-Mar-2024 07:52:26.606 CET
+Begin processing the 73rd record. Run 369978, Event 571283312, LumiSection 515 on stream 0 at 15-Mar-2024 07:52:33.569 CET
+Begin processing the 74th record. Run 369978, Event 570592521, LumiSection 515 on stream 0 at 15-Mar-2024 07:52:47.929 CET
+Begin processing the 75th record. Run 369978, Event 570407751, LumiSection 515 on stream 0 at 15-Mar-2024 07:53:01.632 CET
+Begin processing the 76th record. Run 369978, Event 570076156, LumiSection 515 on stream 0 at 15-Mar-2024 07:53:12.113 CET
+Begin processing the 77th record. Run 369978, Event 570302416, LumiSection 515 on stream 0 at 15-Mar-2024 07:53:18.493 CET
+Begin processing the 78th record. Run 369978, Event 570354848, LumiSection 515 on stream 0 at 15-Mar-2024 07:53:26.587 CET
+Begin processing the 79th record. Run 369978, Event 571032912, LumiSection 515 on stream 0 at 15-Mar-2024 07:53:27.380 CET
+%MSG-w HLTObjectsMonitor:  HLTObjectsMonitor:hltObjectsMonitor4all  15-Mar-2024 07:53:27 CET Run: 369978 Event: 571032912
+trigger object does not match ( dR > 0.1) to any of the candidates in either InputTag:  label = hltL3NoFiltersNoVtxMuonCandidates, instance =  or InputTag:  label = hltEgammaCandidates, instance = 
+%MSG
+%MSG-w HLTObjectsMonitor:  HLTObjectsMonitor:hltObjectsMonitor4all  15-Mar-2024 07:53:27 CET Run: 369978 Event: 571032912
+trigger object does not match ( dR > 0.1) to any of the candidates in either InputTag:  label = hltL3NoFiltersNoVtxMuonCandidates, instance =  or InputTag:  label = hltEgammaCandidates, instance = 
+%MSG
+%MSG-w HLTObjectsMonitor:  HLTObjectsMonitor:hltObjectsMonitor4all  15-Mar-2024 07:53:27 CET Run: 369978 Event: 571032912
+trigger object does not match ( dR > 0.1) to any of the candidates in either InputTag:  label = hltL3NoFiltersNoVtxMuonCandidates, instance =  or InputTag:  label = hltEgammaCandidates, instance = 
+%MSG
+%MSG-e CTPPSPixelDataFormatter:  CTPPSPixelRawToDigi:ctppsPixelDigis  15-Mar-2024 07:53:37 CET Run: 369978 Event: 571032912
+unphysical col and/or row: fedId= 1463, nllink= 9, convroc= 0, adc= 0, col= 9, row= 80, detId= 2040070144
+Note: further warnings of this type will be suppressed (this can be changed by enabling debugging printout)
+%MSG
+Begin processing the 80th record. Run 369978, Event 570385846, LumiSection 515 on stream 0 at 15-Mar-2024 07:53:37.739 CET
+Begin processing the 81st record. Run 369978, Event 570777260, LumiSection 515 on stream 0 at 15-Mar-2024 07:53:48.053 CET
+Begin processing the 82nd record. Run 369978, Event 569807451, LumiSection 515 on stream 0 at 15-Mar-2024 07:54:00.656 CET
+Begin processing the 83rd record. Run 369978, Event 569974486, LumiSection 515 on stream 0 at 15-Mar-2024 07:54:08.357 CET
+Begin processing the 84th record. Run 369978, Event 570130354, LumiSection 515 on stream 0 at 15-Mar-2024 07:54:21.781 CET
+Begin processing the 85th record. Run 369978, Event 570888038, LumiSection 515 on stream 0 at 15-Mar-2024 07:54:32.941 CET
+Begin processing the 86th record. Run 369978, Event 569849228, LumiSection 515 on stream 0 at 15-Mar-2024 07:54:39.977 CET
+Begin processing the 87th record. Run 369978, Event 571422877, LumiSection 515 on stream 0 at 15-Mar-2024 07:54:54.807 CET
+Begin processing the 88th record. Run 369978, Event 569737018, LumiSection 515 on stream 0 at 15-Mar-2024 07:55:06.658 CET
+Begin processing the 89th record. Run 369978, Event 569947343, LumiSection 515 on stream 0 at 15-Mar-2024 07:55:07.279 CET
+Begin processing the 90th record. Run 369978, Event 570342246, LumiSection 515 on stream 0 at 15-Mar-2024 07:55:29.475 CET
+Begin processing the 91st record. Run 369978, Event 570467713, LumiSection 515 on stream 0 at 15-Mar-2024 07:55:43.193 CET
+Begin processing the 92nd record. Run 369978, Event 571225463, LumiSection 515 on stream 0 at 15-Mar-2024 07:55:56.209 CET
+Begin processing the 93rd record. Run 369978, Event 571248931, LumiSection 515 on stream 0 at 15-Mar-2024 07:56:05.139 CET
+%MSG-e FailedPropagation:  TrackProducer:lowPtQuadStepTracks  15-Mar-2024 07:56:07 CET Run: 369978 Event: 571248931
+ too many iterations trying to reach plane 
+%MSG
+Begin processing the 94th record. Run 369978, Event 571334179, LumiSection 515 on stream 0 at 15-Mar-2024 07:56:22.728 CET
+Begin processing the 95th record. Run 369978, Event 570766371, LumiSection 515 on stream 0 at 15-Mar-2024 07:56:34.562 CET
+Begin processing the 96th record. Run 369978, Event 570766368, LumiSection 515 on stream 0 at 15-Mar-2024 07:56:44.838 CET
+Begin processing the 97th record. Run 369978, Event 570550903, LumiSection 515 on stream 0 at 15-Mar-2024 07:57:03.561 CET
+Begin processing the 98th record. Run 369978, Event 569834794, LumiSection 515 on stream 0 at 15-Mar-2024 07:57:18.696 CET
+Begin processing the 99th record. Run 369978, Event 570563584, LumiSection 515 on stream 0 at 15-Mar-2024 07:57:25.983 CET
+Begin processing the 100th record. Run 369978, Event 570529219, LumiSection 515 on stream 0 at 15-Mar-2024 07:57:37.139 CET
+15-Mar-2024 07:57:46 CET  Closed file file:step2.root
+%MSG-e TotemVFATRawToDigi:  TotemVFATRawToDigi:ctppsDiamondRawToDigi@endStream  15-Mar-2024 07:58:04 CET PostEndProcessBlock
+[TotemVFATRawToDigi] errors:
+No AnalysisMask found for TimingDiamond (100)
+%MSG
+%MSG-e CTPPSPixelDataFormatter:  CTPPSPixelRawToDigi:ctppsPixelDigis@endStream  15-Mar-2024 07:58:04 CET PostEndProcessBlock
+[ctppsPixelRawToDigi] errors:
+unphysical col and/or row (4)
+%MSG
+%MSG-w SiStripRawToDigi:  SiStripRawToDigiModule:siStripDigis@endStream  15-Mar-2024 07:58:04 CET PostEndProcessBlock
+[sistrip::RawToDigiUnpacker::createDigis] warnings:
+NULL pointer to FEDRawData for FED (100)
+%MSG

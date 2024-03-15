@@ -1,0 +1,37 @@
+DIGI:pdigi_valid,L1,DIGI2RAW,HLT:@fake,ENDJOB
+We have determined that this is simulation (if not, rerun cmsDriver.py with --data)
+entry file:step1.root
+Step: DIGI Spec: ['pdigi_valid']
+Step: L1 Spec: 
+Step: DIGI2RAW Spec: 
+Step: HLT Spec: ['@fake']
+Step: ENDJOB Spec: 
+customising the process with customizeHLTforMC from HLTrigger/Configuration/customizeHLTforMC
+Starting  cmsRun  step2_DIGI_L1_DIGI2RAW_HLT.py
+2024-03-15 07:15:53.836179: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+15-Mar-2024 07:15:54 CET  Initiating request to open file file:step1.root
+15-Mar-2024 07:15:55 CET  Successfully opened file file:step1.root
+Begin processing the 1st record. Run 1, Event 1, LumiSection 1 on stream 0 at 15-Mar-2024 07:16:00.452 CET
+#--------------------------------------------------------------------------
+#                         FastJet release 3.4.1
+#                 M. Cacciari, G.P. Salam and G. Soyez                  
+#     A software package for jet finding and analysis at colliders      
+#                           http://fastjet.fr                           
+#	                                                                      
+# Please cite EPJC72(2012)1896 [arXiv:1111.6097] if you use this package
+# for scientific work and optionally PLB641(2006)57 [hep-ph/0512210].   
+#                                                                       
+# FastJet is provided without warranty under the GNU GPL v2 or higher.  
+# It uses T. Chan's closest pair algorithm, S. Fortune's Voronoi code
+# and 3rd party plugin jet algorithms. See COPYING file for details.
+#--------------------------------------------------------------------------
+Begin processing the 2nd record. Run 1, Event 2, LumiSection 1 on stream 0 at 15-Mar-2024 07:16:11.528 CET
+Begin processing the 3rd record. Run 1, Event 3, LumiSection 1 on stream 0 at 15-Mar-2024 07:16:12.098 CET
+Begin processing the 4th record. Run 1, Event 4, LumiSection 1 on stream 0 at 15-Mar-2024 07:16:12.658 CET
+Begin processing the 5th record. Run 1, Event 5, LumiSection 1 on stream 0 at 15-Mar-2024 07:16:13.203 CET
+Begin processing the 6th record. Run 1, Event 6, LumiSection 1 on stream 0 at 15-Mar-2024 07:16:13.754 CET
+Begin processing the 7th record. Run 1, Event 7, LumiSection 1 on stream 0 at 15-Mar-2024 07:16:14.316 CET
+Begin processing the 8th record. Run 1, Event 8, LumiSection 1 on stream 0 at 15-Mar-2024 07:16:14.847 CET
+Begin processing the 9th record. Run 1, Event 9, LumiSection 1 on stream 0 at 15-Mar-2024 07:16:15.409 CET
+Begin processing the 10th record. Run 1, Event 10, LumiSection 1 on stream 0 at 15-Mar-2024 07:16:15.950 CET
+15-Mar-2024 07:16:16 CET  Closed file file:step1.root

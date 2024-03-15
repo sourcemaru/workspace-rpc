@@ -1,0 +1,29 @@
+HARVESTING:validationHarvestingNoHLT+dqmHarvestingFakeHLT
+entry file:step3_inDQM.root
+Step: HARVESTING Spec: ['validationHarvestingNoHLT', 'dqmHarvestingFakeHLT']
+Starting  cmsRun  step4_HARVESTING.py
+2024-03-15 07:19:14.171906: I tensorflow/core/util/port.cc:110] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+15-Mar-2024 07:19:19 CETSuccessfully opened file file:step3_inDQM.root
+%MSG-e HLTConfigProvider:   EgHLTOfflineSummaryClient:egHLTOffDQMSummaryClient@beginRun  15-Mar-2024 07:19:21 CET Run: 1
+Falling back to ProcessName-only init using ProcessName 'HLT' !
+%MSG
+%MSG-e HLTConfigProvider:   EgHLTOfflineSummaryClient:egHLTOffDQMSummaryClient@beginRun  15-Mar-2024 07:19:21 CET Run: 1
+ Process name 'HLT' not found in registry!
+%MSG
+%MSG-w FastTimerServiceClient:   FastTimerServiceClient:dqmFastTimerServiceClient@endLumi  15-Mar-2024 07:19:21 CET Run: 1 Lumi: 1
+no lumiVsLS ME is available in HLT/LumiMonitoring
+%MSG
+%MSG-w FastTimerServiceClient:   FastTimerServiceClient:dqmFastTimerServiceClient@endLumi  15-Mar-2024 07:19:21 CET Run: 1 Lumi: 1
+no puVsLS ME is available in HLT/LumiMonitoring
+%MSG
+%MSG-w SiStripBadModuleFedErrService:   SiStripBadComponentInfo:siStripBadComponentInfo@endProcessBlock  15-Mar-2024 07:19:26 CET post-events
+Empty bad channel map from FED errors
+%MSG
+%MSG-w FastTimerServiceClient:   FastTimerServiceClient:dqmFastTimerServiceClient@endProcessBlock  15-Mar-2024 07:19:26 CET post-events
+no lumiVsLS ME is available in HLT/LumiMonitoring
+%MSG
+%MSG-w FastTimerServiceClient:   FastTimerServiceClient:dqmFastTimerServiceClient@endProcessBlock  15-Mar-2024 07:19:26 CET post-events
+no puVsLS ME is available in HLT/LumiMonitoring
+%MSG
+DQMFileSaver::globalEndRun()
+15-Mar-2024 07:19:32 CETClosed file
